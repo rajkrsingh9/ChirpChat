@@ -1,0 +1,103 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<section class="header">
+
+    <div class="headerBody">
+        <img src="{{asset('/images/logo-removebg-preview.png')}}" class="logo" />
+        <div class="rightsideheader">
+            <ul>
+                <li>
+                    <a href="/">
+                        <div class="icon"><i class="fa fa-home"></i></div>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="/projects"><div class="icon"><i class="fa-solid fa-book-open-reader" style="color: #000;"></i></div>
+                    View Projects </a>
+                  </li>
+                <li><a href="/aboutus">
+                        <div class="icon"><i class="fa-regular fa-address-card" style="color: black;"></i></div>
+                        AboutUs
+                    </a>
+                </li>
+                <li><a href='/contactus'>
+                        <div class="icon"><i class="fa fa-comments"></i></div>
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+            <div class="headimg" id="headimg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="projectstable">
+    <div id="head1"> View &nbsp;
+        <div id="color"> Projects</div>
+    </div>
+    <input type="text" id="myInput" placeholder="Search by Project Name" onkeyup="searchFun()">
+    <table border="1" id="myTable">
+        <tr>
+            <th> Sl No. </th>
+            <th> Project Name </th>
+            <th> Team Name </th>
+            <th> Project Description </th>
+            <th> College Name </th>
+            <th> Spoc Name </th>
+            <th> Spoc Email Id </th>
+            <th> Project Document </th>
+        </tr>
+        {% set no = 0 %}
+        {% for project in projects %}
+        {% set no = no + 1 %}
+        <tr>
+            <td> {{ no }} </td>
+            <td> {{ project.projectName }} </td>
+            <td> {{ project.teamName }} </td>
+            <td> {{ project.title }} </td>
+            <td> {{ project.collegeName }} </td>
+            <td> {{ project.firstname }} {{ project.lastname }} </td>
+            <td> {{ project.email }} </td>
+            <td> <a href='{{ project.projectDocuments }}' target="_blank"> View Documents </a> </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+
+<footer>
+    <div class="footer">
+        <div class="foot-left">
+            <div class="logo-foot">
+                <img src="{{asset('/images/logo-removebg-preview.png')}}" />
+            </div>
+            <div class="content">
+                <p>Streamlined platform for student collaboration, project submission, and networking.
+                    Facilitates
+                    seamless teamwork, feedback, and skill development in a vibrant community.</p>
+            </div>
+        </div>
+        <div class="links-foot">
+            <div class="foot-head">
+                Quick Links
+            </div>
+            <div class="foot-links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/projects">View Projects</a></li>
+                    <li><a href="/aboutus">About Us</a></li>
+                    <li><a href="/contactus">Contact Us</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        © 2024 Developed By Team Predecon. All Right Reserved
+    </div>
+</footer>
+{% endblock %}

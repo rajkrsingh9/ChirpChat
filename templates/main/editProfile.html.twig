@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<body class="sbody">
+  <div class="loginbox signup" style="height: 525px; width: 475px;">
+    <img src="{{image}}" class="imgg" />
+    <h1>SignUP Here</h1>
+    <form id="editDel">
+      <span id="error" style="color:red;"></span><br>
+
+      <input type="text" name="fname" placeholder="Enter First Name" id="name1" class="fName" value="{{firstName}}" required />
+      <input type="text" name="lname" placeholder="Enter Last Name" id="name2" class="fName" value="{{lastName}}" required />
+      <label> Gender : </label>
+      {% if gender == 'Male' %}
+        <input type="radio" name="gender" class="gender" value="Male" checked required/>Male
+        <input type="radio" name="gender" class="gender" value="Female" />Female
+      {% else %}
+        <input type="radio" name="gender" class="gender" value="Male" checked required/>Male
+        <input type="radio" name="gender" class="gender" value="Female" checked />Female
+      {% endif %}
+      <input type="file" id="img" name="image" class="imginput" accept="image/*" /><br>
+      <textarea type="text" id="about" name="abotYou" class="text_area" placeholder="About You" required>{{about}}</textarea><br>
+      <input type="submit" name="login" value="Submit Details" id="EditProfile" />
+      <a href="/" style="float: left">Home</a>
+    </form>
+  </div>
+  <div class="loader-div">
+      <img class="loader-img" src="images/Triple intersection.gif" style="height:120px;width:auto;" />
+  </div>
+</body>
+{% endblock %}

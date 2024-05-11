@@ -1,0 +1,91 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<section class="header">
+
+  <div class="headerBody">
+    <img src="{{asset('/images/logo-removebg-preview.png')}}" class="logo" />
+    <div class="rightsideheader">
+      
+      <ul>
+        <li>
+          <a href="/">
+            <div class="icon"><i class="fa fa-home"></i></div>
+            Home
+          </a>
+        </li>
+        <li><a href="/aboutus">
+            <div class="icon"><i class="fa-regular fa-address-card" style="color: black;"></i></div>
+            AboutUs
+          </a>
+        </li>
+        <li><a href='/contact'>
+            <div class="icon"><i class="fa fa-comments"></i></div>
+            Contact Us
+          </a>
+        </li>
+      </ul>
+      <div class="headimg" id="headimg">
+      </div>
+    </div>
+  </div>
+  <div id="searchlist">
+    <ol id="list">
+
+    </ol>
+  </div>
+
+</section>
+
+<div class="signbody">
+  <img src="images/image.png">
+  <div class="signup-box">
+
+
+    <div id="head1"> LogIn &nbsp;
+      <div id="color"> Here</div>
+    </div>
+    <form>
+      <span id="error"></span><br/>
+      
+      <input type="text" name="emailid" id="emailId" placeholder="Enter Email" class="fName" required />
+      <br>
+      <input type="password" name="pass" placeholder="Enter Password" id="pass" class="fName" required />
+      <br>
+      <input type="submit" name="login" value="login" id="login" />
+      <a href="ResetPass" style="float: left">Forgot Password?</a>
+      <a href="newAccount" style="float: right">Don't have an Account?</a>
+    </form>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <div class="foot-left">
+        <div class="logo-foot">
+          <img src="{{asset('/images/logo-removebg-preview.png')}}" />
+        </div>
+        <div class="content">
+          <p>Streamlined platform for student collaboration, project submission, and networking.
+            Facilitates
+            seamless teamwork, feedback, and skill development in a vibrant community.</p>
+        </div>
+      </div>
+      <div class="links-foot">
+        <div class="foot-head">
+          Quick Links
+        </div>
+        <div class="foot-links">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/aboutus">About Us</a></li>
+            <li><a href="/contactus">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="copyright">
+      © 2024 Developed By Team Predecon. All Right Reserved
+    </div>
+  </footer>
+  {% endblock %}

@@ -1,0 +1,108 @@
+{% extends 'base.html.twig' %}
+
+  {% block body %}
+    
+  <section class="header">
+            
+    <div class="headerBody">
+      <img src="{{asset('/images/logo-removebg-preview.png')}}" class="logo" />
+      <div class="rightsideheader">
+        <ul>
+          <li>
+            <a href="/"><div class="icon"><i class="fa fa-home"></i></div>
+            Home </a>
+          </li>
+          <li>
+            <a href="/projects"><div class="icon"><i class="fa-solid fa-book-open-reader" style="color: #000;"></i></div>
+            View Projects </a>
+          </li>
+          <li><a href="/aboutus">
+            <div class="icon"><i class="fa-regular fa-address-card" style="color: black;"></i></div>
+            AboutUs</a>
+          </li>
+          
+          <li><a href='/contactus'>
+            <div class="icon"><i class="fa fa-comments"></i></div>
+            Contact Us</a>
+          </li>
+        </ul>
+        <div class="headimg" id="headimg">
+        </div>
+      </div>
+    </div>
+</section>
+    <section>
+      <div class="container">
+        <div class="bodypart">
+          <div class="leftbody">
+            <div class="topleftbody"></div>
+            <div class="middleleftbody" id="middleleftbody">
+            </div>
+            <div class="bottomleftbody">
+              <div class="online">
+                <div class="onlinetop">
+                  <h2>Users</h2>
+                </div>
+                <div class="allUser">
+                  <div class="onlinrdown" id="onlinrdown">
+                  
+                  </div>
+                  <div class="onlinrup" id="onlinrup">
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rightbody" id="rightbody">
+            <div class="wiym">
+              <textarea name="WIYM" class="areatext" placeholder="Project Description" id="postdescription"></textarea>
+              <br>
+              <div class="details">
+              <input name="projectName"  placeholder="Project Name" id="projectName" ></input>
+              <input name="teamName" placeholder="Team Name" id="teamName"></input>
+              <br>
+              <label for="">Upload your project file:</label>
+              <input type="file" id="filePost" title=" " name="filePost" accept="application/pdf" />
+              </div>
+              <div class="button" id="button">POST</div>
+            </div>
+            <div class="postpart" id='postpart'>
+              
+            </div>
+          </div>
+        </div>
+      </div>      
+    </section>
+    <footer>
+  <div class="footer">
+    <div class="foot-left">
+      <div class="logo-foot">
+        <img src="{{asset('/images/logo-removebg-preview.png')}}" />
+      </div>
+      <div class="content">
+        <p>Streamlined platform for student collaboration, project submission, and networking.
+          Facilitates
+          seamless teamwork, feedback, and skill development in a vibrant community.</p>
+      </div>
+    </div>
+    <div class="links-foot"> 
+      <div class="foot-head">
+        Quick Links
+      </div>
+      <div class="foot-links">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/aboutus">About Us</a></li>
+          <li><a href="/contactus">Contact Us</a></li>
+          <li><a href="/projects">View Projects</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <div class="copyright">
+    © 2024 Developed By Team Predecon. All Right Reserved
+  </div>
+</footer>
+  {% endblock %}

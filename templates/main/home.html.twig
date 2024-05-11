@@ -1,0 +1,99 @@
+{% extends 'base.html.twig' %}
+
+  {% block body %}
+
+  <section class="header">
+            
+    <div class="headerBody">
+      <img src="{{asset('/images/logo-removebg-preview.png')}}" class="logo" />
+      <div class="rightsideheader">
+        <ul>
+          <li>
+            <a href="/"><div class="icon"><i class="fa fa-home"></i></div>
+            Home </a>
+          </li>
+          <li>
+            <a href="/projects"><div class="icon"><i class="fa-solid fa-book-open-reader" style="color: #000;"></i></div>
+            View Projects </a>
+          </li>
+          <li><a href="/aboutus">
+            <div class="icon"><i class="fa-regular fa-address-card" style="color: black;"></i></div>
+            AboutUs</a>
+          </li>
+          
+          <li><a href="/contactus">
+            <div class="icon"><i class="fa fa-bolt"></i></div>
+            Contact Us</a>
+          </li>
+          <li class="editP"> <a href='/login'>
+            <div class="icon"><i class="fa fa-user"></i></div>
+            Login</a>
+          </li>
+        </ul>
+        <div class="headimg" id="headimg"><a></a>
+        </div>
+      </div>
+    </div>
+    
+  
+</section>
+<div class="projects">
+    <img src="{{asset('/images/projects.svg')}}"/>
+    <button><a href="/projects">View Projects</a></button>
+</div>
+<div class="aboutus-i">
+    <div class="left">
+        <div id="head1">Welcome to &nbsp;
+            <div id="color"> VidyaVista</div>
+        </div>
+        <h3>Think ! Create ! Documentate</h3>
+        <p>
+            At VidyaVista, we provide a dynamic platform for colleges to showcase the exceptional projects of
+            their selected students. Through our streamlined process, colleges can upload projects via their
+            appointed Single Point of Contact (SPOC), which could be their dean...</p>
+        <div class="btn">
+            <button><a href="/aboutus">Read More...</a></button>
+            <button><a href="/contactus">Get In Touch</a></button>
+        </div>
+
+    </div>
+    <div class="right">
+        <img src="{{asset('/images/secured.svg')}}"/>
+    </div>
+</div>
+<div class="projects">
+    <img src="{{asset('/images/spoc upload.svg')}}"/>
+    <button><a href="/">Add Projects</a></button>
+</div>
+<footer>
+    <div class="footer">
+        <div class="foot-left">
+            <div class="logo-foot">
+                <img src="{{asset('/images/logo-removebg-preview.png')}}" />
+            </div>
+            <div class="content">
+                <p>Streamlined platform for student collaboration, project submission, and networking.
+                    Facilitates
+                    seamless teamwork, feedback, and skill development in a vibrant community.</p>
+            </div>
+        </div>
+        <div class="links-foot">
+            <div class="foot-head">
+                Quick Links
+            </div>
+            <div class="foot-links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/aboutus">About</a></li>
+                    <li><a href="/contactus">Contact</a></li>
+                    <li><a href="/projects">View Projects</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        © 2024 Developed By Team Predecon. All Right Reserved
+    </div>
+</footer>
+{% endblock %}

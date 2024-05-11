@@ -1,0 +1,135 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<section class="header">
+
+	<div class="headerBody">
+		<img src="{{asset('/images/logo-removebg-preview.png')}}" class="logo" />
+		<div class="rightsideheader">
+			<ul>
+				<li>
+					<a href="/">
+						<div class="icon"><i class="fa fa-home"></i></div>
+						Home
+					</a>
+				</li>
+				<li><a href="/aboutus">
+						<div class="icon"><i class="fa-regular fa-address-card" style="color: black;"></i></div>
+						AboutUs
+					</a>
+				</li>
+				<li><a href='/contactus'>
+						<div class="icon"><i class="fa fa-comments"></i></div>
+						Contact Us
+					</a>
+				</li>
+			</ul>
+			<div class="headimg" id="headimg">
+			</div>
+		</div>
+	</div>
+	<div id="searchlist">
+		<ol id="list">
+
+		</ol>
+	</div>
+
+</section>
+<div class="doc">
+
+	<a href="https://drive.google.com/file/d/18wisO0kmdNZPMMA-r1UEZYS5ribiasth/view?usp=sharing">Authentication Letter Proforma <i class="fa-solid fa-download"></i></a>
+</div>
+<div class="signbody">
+	<img src="images/login_img.jpg">
+	<div class="signup-box">
+
+
+		<div id="head1"> SignUP &nbsp;
+			<div id="color"> Here</div>
+		</div>
+		<form id="subsignup">
+			<span id="error" style="color:red;"></span><br>
+		  <select id="userType" name="role">
+			  <option value="student">Viewer</option>
+			  <option value="spoc">SPOC</option>
+		  </select>
+		  <br>
+
+			<input type="text" name="fname" placeholder="Enter First Name" id="name1" class="fName" required />
+			<input type="text" name="lname" placeholder="Enter Last Name" id="name2" class="fName" required />
+			<label>
+				Gender :
+			</label>
+			<input type="radio" name="gender" class="gender" value="Male" required />Male
+			<input type="radio" name="gender" class="gender" value="Female" />Female
+			<input type="file" id="img" name="image" class="imginput" accept="image/*" /><br>
+			<textarea type="text" id="about" name="abotYou" class="text_area" placeholder="About You"
+				required></textarea><br>
+			<br>
+			<div id="spocFields" style="display:none;">
+				<label>
+					College Details :
+				</label><br>
+				<input type="text" name="collegeName" placeholder="Enter College/University" id="collegeName" />
+				<input type="text" name="collegeId" placeholder="Enter College Id" id="collegeId" />
+				<input type="text" name="designation" placeholder="Enter Your Designation" id="designation" />
+				<textarea type="text" id="address" name="addressInsti" class="text_area"
+					placeholder="Address of your Institution" ></textarea><br>
+				<input type="text" name="city" placeholder="City" id="city" />
+				<input type="text" name="state" placeholder="State" id="state" />
+				<input type="text" name="zipCode" placeholder="Zip/Postal Code" id="zipCode" /><br>
+				<label>
+					Authentication Letter :
+				</label><br>
+				<input type="file" id="authLetter" name="authLetter" class="imginput" accept="application/pdf" /><br>
+			</div>
+			<input type="text" name="phoneNumber" placeholder="Enter Your Phone Number" id="phoneNumber" required />
+			<input type="text" name="email" placeholder="Enter Email" id="emailId" required />
+			<input type="submit" name="otpb" value="OTP" id="otpb" />
+			<input type="text" name="otp" placeholder="Enter Otp" id="otp" required />
+			<button id="resendotp" disabled>Resend OTP</button><br>
+			<input type="password" name="pass" placeholder="Enter Password" id="pass" class="fName" required />
+			<input type="password" name="confirmPass" placeholder="Confirm Password" id="cpass" class="fName"
+				required />
+			<input type="submit" name="login" value="login" id="signup" />
+			<a href="ResetPass" style="float: left">Forgot Password?</a>
+			<a href="login" style="float: right">LogIn</a>
+
+		</form>
+	</div>
+	<div class="loader-div">
+		<img class="loader-img" src="images/Triple intersection.gif" style="height:120px;width:auto;" />
+	</div>
+</div>
+<footer>
+	<div class="footer">
+		<div class="foot-left">
+			<div class="logo-foot">
+				<img src="{{asset('/images/logo-removebg-preview.png')}}" />
+			</div>
+			<div class="content">
+				<p>Streamlined platform for student collaboration, project submission, and networking.
+					Facilitates
+					seamless teamwork, feedback, and skill development in a vibrant community.</p>
+			</div>
+		</div>
+		<div class="links-foot">
+			<div class="foot-head">
+				Quick Links
+			</div>
+			<div class="foot-links">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/aboutus">About</a></li>
+					<li><a href="/contactus">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	<div class="copyright">
+		© 2024 Developed By Team Predecon. All Right Reserved
+	</div>
+</footer>
+</body>
+{% endblock %}

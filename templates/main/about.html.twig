@@ -1,0 +1,131 @@
+{% extends 'base.html.twig' %}
+
+  {% block body %}
+  <section class="header">
+            
+    <div class="headerBody">
+      <img src="{{asset('/images/logo-removebg-preview.png')}}" class="logo" />
+      <div class="rightsideheader">
+        <ul>
+          <li>
+            <a href="/"><div class="icon"><i class="fa fa-home"></i></div>
+            Home </a>
+          </li>
+          <li>
+            <a href="/projects"><div class="icon"><i class="fa-solid fa-book-open-reader" style="color: #000;"></i></div>
+            View Projects </a>
+          </li>
+          <li><a href="/aboutus">
+            <div class="icon"><i class="fa-regular fa-address-card" style="color: black;"></i></div>
+            AboutUs</a>
+          </li>
+         
+          <li><a href='/contactus'>
+            <div class="icon"><i class="fa fa-comments"></i></div>
+            Contact Us</a>
+          </li>
+        </ul>
+        <div class="headimg" id="headimg">
+        </div>
+      </div>
+    </div>
+    <div id="searchlist">
+          <ol id="list">
+
+          </ol>
+        </div>
+  
+</section>
+  <div class="aboutus">
+    <div id="head1">Welcome to &nbsp;
+        <div id="color"> VidyaVista</div>
+    </div>
+    <div class="container1">
+        <div class="content-1">
+            <p>
+                At VidyaVista, we provide a dynamic platform for colleges to showcase the exceptional projects
+                of their selected students. Through our streamlined process, colleges can upload projects via
+                their appointed Single Point of Contact (SPOC), which could be their dean, librarian, or
+                registrar. This ensures that only the highest quality projects are featured on our platform.
+                <br><br><br>
+                Students submit their projects electronically, presenting PDF and MP4 versions along with their
+                credentials and a concise yet comprehensive project description. Each submission undergoes a
+                rigorous plagiarism check, allowing only 10% similarity to ensure originality and integrity.
+            </p>
+        </div>
+        <div class="image1">
+            <img src="{{asset('/images/img2.avif')}}"/>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="image1">
+            <img src="{{asset('/images/abt.avif')}}"/>
+        </div>
+        <div class="content-1">
+            <p>
+                Once approved, the document is seamlessly integrated into our database, creating a personalized
+                profile for the student. This profile serves as a hub for future uploads, enabling students to
+                easily manage and update their information at any time.
+                <br><br><br>
+                Our commitment to inclusivity extends to breaking down linguistic barriers. We translate project
+                descriptions into 12 Indian regional languages, ensuring accessibility for all users.
+                <br><br><br>
+                To keep our platform current, we dynamically prioritize new projects featuring cutting-edge
+                technologies and resources. Projects are categorized by technology and subject, facilitating
+                easy searching and learning for our global user base.
+            </p>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="content-1">
+            <p>
+                VidyaVista is not just a repository of projects; it's a community. Our platform is free for
+                all users worldwide, fostering connections and collaboration among students. However, to
+                maintain the integrity of our community, users must undergo a validation process before
+                accessing certain features.
+                <br><br><br>
+                Join us at VidyaVista and be part of a vibrant community dedicated to innovation, collaboration,
+                and learning. Together, let's showcase the future of academia.
+            </p>
+        </div>
+        <div class="image1">
+            <img src="{{asset('/images/img3.jpg')}}"/>
+        </div>
+    </div>
+    <div id="head1">Thank &nbsp;
+        <div id="color"> You</div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer">
+        <div class="foot-left">
+            <div class="logo-foot">
+                <img src="{{asset('/images/logo-removebg-preview.png')}}" />
+            </div>
+            <div class="content">
+                <p>Streamlined platform for student collaboration, project submission, and networking.
+                    Facilitates
+                    seamless teamwork, feedback, and skill development in a vibrant community.</p>
+            </div>
+        </div>
+        <div class="links-foot">
+            <div class="foot-head">
+                Quick Links
+            </div>
+            <div class="foot-links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/aboutus">About</a></li>
+                    <li><a href="/contactus">Contact</a></li>
+                    <li><a href="/projects">View Projects</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        © 2024 Developed By Team Predecon. All Right Reserved
+    </div>
+</footer>
+{% endblock %}
