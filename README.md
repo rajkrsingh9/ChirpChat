@@ -11,3 +11,7 @@ This is an Online inetegrated platform for projects taken up by students of vari
 
 ### Signup and start using the platform
 ## HAPPY CODING
+
+
+![image](https://github.com/rajkrsingh9/ChirpChat/assets/143270207/8c48f461-3446-427c-b4ae-b72e84d497dc)
+
