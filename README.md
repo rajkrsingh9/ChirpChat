@@ -3,7 +3,7 @@
 The Web server is using PHP CGI 8.2.12
 http://127.0.0.1:8000
 
-This is an Online inetegrated platform for projects taken up by students of various institutions( colleges, universities and schools).
+This is an Online integrated platform for projects taken up by students of various institutions( colleges, universities and schools).
 
 ### To run the project 
 1) Clone the repository
